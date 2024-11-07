@@ -30,8 +30,11 @@ npx create-git-pinned-repos
 ```
 Add the GITHUB_TOKEN to your .env file according to the framework you use
 
+
+if using VITE uncomment the import.meta.env.VITE_GITHUB_TOKEN  line from the component
 ```bash
 VITE_GITHUB_TOKEN=your-github-token-here 
+
 
 or
 
