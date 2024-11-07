@@ -17,6 +17,8 @@ import React, { useState, useEffect } from "react";
  * <GithubPinnedRepos username="githubUsername" />
  */
 
+
+
 interface PinnedRepo {
   name: string;
   description: string;
@@ -48,9 +50,9 @@ export default function GithubPinnedRepos({
   const [error, setError] = useState<string | null>(null);
 
   const token =
-    import.meta.env.VITE_GITHUB_TOKEN ||
-    process.env.NEXT_APP_GITHUB_TOKEN ||
-    process.env.REACT_APP_GITHUB_TOKEN;
+    // import.meta.env.VITE_GITHUB_TOKEN ||
+    process.env.NEXT_PUBLIC_GITHUB_TOKEN ||
+    process.env.REACT_APP_GITHUB_TOKEN
 
   useEffect(() => {
     const fetchPinnedRepos = async () => {
