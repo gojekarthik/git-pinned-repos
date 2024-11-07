@@ -17,15 +17,10 @@ program
       path.join(currentDir, "github-pinned-repos.tsx")
     );
     console.log(
-      "GithubPinnedRepos.tsx has been created in your current directory."
+      "GithubPinnedRepos.tsx has been created in your current directory. Add it to your component folder"
     );
 
-    // Copy README.md
-    fs.copyFileSync(
-      path.join(templateDir, "README.md"),
-      path.join(currentDir, "README.md")
-    );
-    console.log("README.md has been created in your current directory.");
+
   });
 
 program.parse(process.argv);
